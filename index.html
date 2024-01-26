@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Document</title>
+
+    <style>
+        .modal {
+            backdrop-filter: blur(5px);
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card mt-5 shadow mb-5">
+                    <div class="card-header text-bg-primary"> Login as admin </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-floating mb-3" id="inp1">
+                                <input type=" text" id="UserName" placeholder="UserName" class="form-control" autofocus
+                                    autocomplete="off">
+                                <label for="UserName">UserName</label>
+                            </div>
+
+                            <div class="form-floating mb-3" id="inp2">
+                                <input type=" text" id="Password" placeholder="Password" class="form-control" autofocus
+                                    autocomplete="off">
+                                <label for="Password">Password</label>
+                            </div>
+
+                            <div id="simpleModal" class="modal " tabindex="- 1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header fw-normal fs-4">
+                                            Please enter your
+                                            data!
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                        </div>
+                                        <div class="modal-footer justify-content-center">
+                                            <button type="button" class="btn btn-danger"
+                                                data-bs-dismiss="modal">ok!</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-check mb-3">
+                                <label class="form-check-label" for="Remember Me">Remember Me</label>
+                                <input type="checkbox" class="form-check-input" id="Remember Me">
+                            </div>
+
+                            <div>
+                                <a class="d-grid " href="./dash.html" style="text-decoration: none;" id="login"><button
+                                        class="btn btn-success"><i class="fa-solid fa-right-to-bracket"></i>
+                                        Login as admin</button></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
